@@ -6,7 +6,7 @@ typedef struct{
   float grade;
   char name[50];
 
-}Person
+}Person;
 
 int main(){
 int size;
@@ -18,7 +18,7 @@ Person * person = (Person*)malloc(size * sizeof(Person));
     perror("Malloc error: ");
     exit(EXIT_FAILURE);
   }
-  for(int i = 0; int < size; ++i){
+  for(int i = 0; i < size; ++i){
     printf("Enter the %d person's name: ", i);
     scanf("%s", person[i].name);
     printf("Enter the %d person's age: ", i);
