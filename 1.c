@@ -7,7 +7,8 @@ int main(){
   int *ptr = (int*)malloc(size * sizeof(int));
   if(ptr == NULL){
     perror("malloc error: ");
-  }
+    exit(EXIT_FAILURE);
+      }
   for(int i = 0; i < size; ++i){
     printf("Enter %d value: ", i);
     scanf("%d", ptr + i);
